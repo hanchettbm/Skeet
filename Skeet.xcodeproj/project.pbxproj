@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F35771C024983E1B0009BD3F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35771BF24983E1B0009BD3F /* main.cpp */; };
+		F35771C824983E230009BD3F /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35771C724983E230009BD3F /* GLUT.framework */; };
+		F35771CA24983E290009BD3F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35771C924983E290009BD3F /* OpenGL.framework */; };
+		F35771DA24983E7D0009BD3F /* bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35771CE24983E7C0009BD3F /* bullet.cpp */; };
+		F35771DB24983E7D0009BD3F /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35771CF24983E7C0009BD3F /* point.cpp */; };
+		F35771DC24983E7D0009BD3F /* driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35771D024983E7C0009BD3F /* driver.cpp */; };
+		F35771DD24983E7D0009BD3F /* uiInteract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35771D124983E7C0009BD3F /* uiInteract.cpp */; };
+		F35771DE24983E7D0009BD3F /* uiDraw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35771D324983E7C0009BD3F /* uiDraw.cpp */; };
+		F35771DF24983E7D0009BD3F /* rifle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35771D524983E7C0009BD3F /* rifle.cpp */; };
+		F35771E024983E7D0009BD3F /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35771D624983E7C0009BD3F /* game.cpp */; };
+		F35771E124983E7D0009BD3F /* velocity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35771D924983E7C0009BD3F /* velocity.cpp */; };
+		F35771E42498418D0009BD3F /* bird.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35771E22498418D0009BD3F /* bird.cpp */; };
+		F35771E7249881A50009BD3F /* flying.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35771E6249881A50009BD3F /* flying.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +35,27 @@
 
 /* Begin PBXFileReference section */
 		F35771BC24983E1B0009BD3F /* Skeet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Skeet; sourceTree = BUILT_PRODUCTS_DIR; };
-		F35771BF24983E1B0009BD3F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F35771C724983E230009BD3F /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		F35771C924983E290009BD3F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F35771CB24983E7C0009BD3F /* point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = point.h; sourceTree = "<group>"; };
+		F35771CC24983E7C0009BD3F /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		F35771CD24983E7C0009BD3F /* rifle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rifle.h; sourceTree = "<group>"; };
+		F35771CE24983E7C0009BD3F /* bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bullet.cpp; sourceTree = "<group>"; };
+		F35771CF24983E7C0009BD3F /* point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = point.cpp; sourceTree = "<group>"; };
+		F35771D024983E7C0009BD3F /* driver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = driver.cpp; sourceTree = "<group>"; };
+		F35771D124983E7C0009BD3F /* uiInteract.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uiInteract.cpp; sourceTree = "<group>"; };
+		F35771D224983E7C0009BD3F /* bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bullet.h; sourceTree = "<group>"; };
+		F35771D324983E7C0009BD3F /* uiDraw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uiDraw.cpp; sourceTree = "<group>"; };
+		F35771D424983E7C0009BD3F /* uiInteract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uiInteract.h; sourceTree = "<group>"; };
+		F35771D524983E7C0009BD3F /* rifle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rifle.cpp; sourceTree = "<group>"; };
+		F35771D624983E7C0009BD3F /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		F35771D724983E7C0009BD3F /* velocity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = velocity.h; sourceTree = "<group>"; };
+		F35771D824983E7C0009BD3F /* uiDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uiDraw.h; sourceTree = "<group>"; };
+		F35771D924983E7C0009BD3F /* velocity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = velocity.cpp; sourceTree = "<group>"; };
+		F35771E22498418D0009BD3F /* bird.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bird.cpp; sourceTree = "<group>"; };
+		F35771E32498418D0009BD3F /* bird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bird.h; sourceTree = "<group>"; };
+		F35771E524987BF00009BD3F /* flying.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flying.h; sourceTree = "<group>"; };
+		F35771E6249881A50009BD3F /* flying.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flying.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35771C824983E230009BD3F /* GLUT.framework in Frameworks */,
+				F35771CA24983E290009BD3F /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +76,7 @@
 			children = (
 				F35771BE24983E1B0009BD3F /* Skeet */,
 				F35771BD24983E1B0009BD3F /* Products */,
+				F35771C624983E230009BD3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +91,36 @@
 		F35771BE24983E1B0009BD3F /* Skeet */ = {
 			isa = PBXGroup;
 			children = (
-				F35771BF24983E1B0009BD3F /* main.cpp */,
+				F35771CE24983E7C0009BD3F /* bullet.cpp */,
+				F35771D224983E7C0009BD3F /* bullet.h */,
+				F35771D024983E7C0009BD3F /* driver.cpp */,
+				F35771D624983E7C0009BD3F /* game.cpp */,
+				F35771CC24983E7C0009BD3F /* game.h */,
+				F35771CF24983E7C0009BD3F /* point.cpp */,
+				F35771CB24983E7C0009BD3F /* point.h */,
+				F35771D524983E7C0009BD3F /* rifle.cpp */,
+				F35771CD24983E7C0009BD3F /* rifle.h */,
+				F35771D324983E7C0009BD3F /* uiDraw.cpp */,
+				F35771D824983E7C0009BD3F /* uiDraw.h */,
+				F35771D124983E7C0009BD3F /* uiInteract.cpp */,
+				F35771D424983E7C0009BD3F /* uiInteract.h */,
+				F35771D924983E7C0009BD3F /* velocity.cpp */,
+				F35771D724983E7C0009BD3F /* velocity.h */,
+				F35771E22498418D0009BD3F /* bird.cpp */,
+				F35771E32498418D0009BD3F /* bird.h */,
+				F35771E524987BF00009BD3F /* flying.h */,
+				F35771E6249881A50009BD3F /* flying.cpp */,
 			);
 			path = Skeet;
+			sourceTree = "<group>";
+		};
+		F35771C624983E230009BD3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F35771C924983E290009BD3F /* OpenGL.framework */,
+				F35771C724983E230009BD3F /* GLUT.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +180,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35771C024983E1B0009BD3F /* main.cpp in Sources */,
+				F35771DD24983E7D0009BD3F /* uiInteract.cpp in Sources */,
+				F35771E7249881A50009BD3F /* flying.cpp in Sources */,
+				F35771DA24983E7D0009BD3F /* bullet.cpp in Sources */,
+				F35771E024983E7D0009BD3F /* game.cpp in Sources */,
+				F35771DB24983E7D0009BD3F /* point.cpp in Sources */,
+				F35771DC24983E7D0009BD3F /* driver.cpp in Sources */,
+				F35771DF24983E7D0009BD3F /* rifle.cpp in Sources */,
+				F35771E124983E7D0009BD3F /* velocity.cpp in Sources */,
+				F35771E42498418D0009BD3F /* bird.cpp in Sources */,
+				F35771DE24983E7D0009BD3F /* uiDraw.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
